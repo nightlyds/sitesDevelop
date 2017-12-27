@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" media="all" href="css/animate.css">
+    <link rel="stylesheet" href="css/app.css">
+    <script src="https://use.fontawesome.com/5b75f85718.js"></script> <!-- Font Awesome -->
+
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.bundle.min.js" integrity="sha384-3ziFidFTgxJXHMDttyPJKDuTlmxJlwbSkojudK/CkRqKDOmeSbN6KLrGdrBQnT2n" crossorigin="anonymous"></script>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Main</title>
+  </head>
+  <body  onload="startTimer()" >
+    <div class="wrapper" style="  background: url('img/^575CE3EFFB08554DFB3447FA725EB9D5E189DFE1462A65A1CF^pimgpsh_fullsize_distr.jpg')no-repeat;
+      background-size: cover;
+      -moz-background-size: cover;
+      -webkit-background-size: cover;
+      -o-background-size: cover;">
+      <div class="header col-md-offset-3 col-md- col-xs-12 col-sm-12 col-lg-12">
+        <h4 class="headerText2">Number</h4>
+        <h4 class="headerText3">Email</h4>
+        <h1 class="headerText">САЙТ И РЕКЛАМА БЕСПЛАТНО ПО CPA МОДЕЛИ</h1>
+      </div>
+      <div class="contentOne">
+        <div class="videoBlock">
+         <iframe  class="video col-md-6 offset-md-1 col-sm-10 offset-sm-1 col-xs-10 offset-xs-1 offset-lg-1 col-lg-4" src="https://www.youtube.com/embed/t6Ej3js-zwM" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+        </div>
+        <div class="contentOneTextBlock col-md-4 col-sm-10 offset-sm-1  col-xs-10 offset-xs-1 offset-md-7 col-lg-6 offset-lg-5">
+         <h1>Text</h1>
+         <p class="contentOneText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+      <div class="contentTwo" style="display: none;">
+        <div class="videoBlock">
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/t6Ej3js-zwM" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+        </div>
+        <div class="contentOneTextBlock">
+         <h1>Text</h1>
+         <p class="contentOneText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+       </div>
+      <div class="contentThree">
+        <div class="contentThreeTextBlock col-lg-10 offset-lg-1 col-sm-10 offset-sm-1  col-xs-10 offset-xs-1 col-md-10 offset-md-1">
+          <p class="contentThreeText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+      <div class="contentFour">
+       <div class="timerBlock col-lg-5 offset-lg-1 col-md-5 offset-md-1 col-sm-10 offset-sm-1 col-xs-10 offset-xs-1">
+         <!-- <p id="demo" class="timer"></p> -->
+         <div class="timerBlock">
+         <div id = 'show' class="timer"></div>
+         		 <div class="timerDays" style="z-index:100;">Days ↑</div>
+       </div>
+
+     </div>
+       <div class="signUp col-lg-5 offset-lg-6 col-md-5 offset-md-6 col-sm-5 offset-sm-6 col-xs-6 offset-xs-5">
+         <input type="text" onkeyup="checkParams()" class="email1" id="email" required placeholder="Number phone">
+         <input type="email" onkeyup="checkParams()" class="email" id="email" required>
+         <input type="button" id="submit" class="offset-sm-10 offset-lg-10" value="Отправить" disabled onClick='location.href="thank-you.html"'>
+         <!-- <a href="thank-you.html" style="text-decoration: none;"  class="offset-lg-11" id="buttonSignUp" disabled>Отправить</a> -->
+       </div>
+      <!-- <div class="contentFive col-lg-6">
+       <h3 class="bounceInRight wow">ПОЛНОЕ СОПРОВОЖДЕНИЕ ВАШЕГО БИЗНЕСА В ИНТЕРНЕТЕ</h3>
+       <h3 class="bounceInRight wow">СОЗДАНИЕ САЙТОВ </h3>
+       <h3 class="bounceInRight wow">СОЗДАНИЕ И ВИДЕНИЕ РЕКЛАМНИХ КОМХ</h3>
+       <h3 class="bounceInRight wow">КОМПАНИИ ВСЕ ВИДИ ТРАФИКА </h3>
+       <h3 class="bounceInRight wow">ПОДКЛЮЧЕНИЕ CRM И СКВОЗНОЙ АНАЛИТИКИ </h3>
+       <h3 class="bounceInRight wow">IP ТЕЛЕФОНИИ КОЛ ТРЕКИНГА </h3>
+     </div>-->
+    </div>
+    </div>
+    <div class="twoBlock">
+    <div class="heroo">
+
+
+
+
+
+    <!--========== SECTION ==========-->
+    <section class="section">
+      <div class="illustration illustration_calculations" id="photoOne">
+        <div class="illustration__container container">
+          <div class="illustration__content">
+
+            <h2 class="heading heading_2">Что это за система и как она работает</h2>
+            <p class="subheading lead"><em>За несколько лет деятельности мы попробовали различные схемы взаимодействия с клиентом:</em></p>
+
+            <ul class="icon-list">
+              <li class="icon-list__item">
+                <div class="icon-list__image">
+                  <iframe src="https://www.youtube.com/embed/t6Ej3js-zwM" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                </div>
+                <div class="icon-list__text">
+                  <p>Работа за фиксированную оплату - когда вы оплачиваете разработку сайта, настройку рекламы и прочее точечно</p>
+                </div>
+              </li>
+              <li class="icon-list__item">
+                <div class="icon-list__image">
+                                    <iframe src="https://www.youtube.com/embed/t6Ej3js-zwM" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                </div>
+                <div class="icon-list__text">
+                  <p>Работа за абонентское обслуживание - когда мы ведем ваш проект, корректируем рекламу и усиливаем конверсию вашего сайта</p>
+                </div>
+              </li>
+              <li class="icon-list__item">
+                <div class="icon-list__image">
+                  <iframe src="https://www.youtube.com/embed/t6Ej3js-zwM" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                </div>
+                <div class="icon-list__text icon-list__text_unbordered">
+                  <p>Работа за лиды (лидогенерация) - когда вы оплачиваете каждую
+  входящую заявку с сайта, независимо от того, состоялась продажа или нет</p>
+                </div>
+              </li>
+              <li class="icon-list__item icon-list__item_lead" style="background-color: #FFFFFF;">
+                <div class="icon-list__image">
+                                    <iframe src="https://www.youtube.com/embed/t6Ej3js-zwM" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                    </div>
+                <div class="icon-list__text" >
+                  <p>И пришли к выводу, что самой рабочей и выгодной схемой
+  сотрудничества как для клиента, так и для маркетингового агентства
+  является</p>
+                  <p><strong class="text-uppercase">работа за % от ваших продаж<br> + рекламный бюджет.</strong></p>
+                </div>
+              </li>
+            </ul>
+
+          </div><!-- /.illustration__content -->
+
+        </div><!-- /.container -->
+      </div><!-- /.illustration -->
+    </section><!-- /.section -->
+
+
+    <!--========== SECTION ==========-->
+    <section class="section section_bg-primary">
+      <div class="container">
+
+        <h2 class="heading heading_2 text-center">Выглядит это так</h2>
+
+        <div class="row row_two-columns">
+          <div class="row__column">
+            <div class="card card_spaced">
+              <div class="card__image card__image_lg">
+                <img src="img/189699.png" alt="" id="iconTwo">
+              </div>
+              <p>Вы вносите сумму на рекламный бюджет - рассчитывается индивидуально, исходя из специфики конкретной ниши.</p>
+              <p><strong>100% этой суммы идёт на рекламу вашего товара/услуги.</strong></p>
+            </div>
+          </div>
+          <div class="row__column">
+            <div class="card card_spaced">
+              <div class="card__image card__image_lg">
+                <img src="img/top.png" alt="" id="iconTwo">
+              </div>
+              <p>После совершения сделки с привлеченным нами клиентом вы
+  выплачиваете % с этой продажи - какой именно оговаривается перед началом
+   сотрудничества и закрепляется в договоре.</p>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /.container -->
+    </section><!-- /.section -->
+
+
+
+        </div><!-- /.container -->
+
+      </div><!-- /.illustration -->
+
+
+    <!--========== SECTION ==========-->
+    <section class="section section_collapse-top" style="margin-top: 5%;">
+      <div class="container">
+
+        <h2 class="heading heading_2 text-center">Преимущества такой схемы работы</h2>
+
+        <div class="row row_three-columns">
+          <div class="row__column">
+            <article class="teaser">
+              <div class="teaser__image teaser__image_lg">
+                <img src="img/document.png" id="iconThree">
+              </div>
+              <h3 class="teaser__heading heading heading_3">Маркетинг и инструменты</h3>
+              <p>Вы не платите за процесс разработки сайта, рекламы, маркетинга в соцсетях, настройку e-mail рассылки и прочих инструментов</p>
+            </article>
+          </div>
+          <div class="row__column">
+            <article class="teaser">
+              <div class="teaser__image teaser__image_lg">
+                <img src="img/235258.png" id="iconThree">
+              </div>
+              <h3 class="teaser__heading heading heading_3">Желанные клиенты</h3>
+              <p>Вы не платите за нецелевые лиды, которых ваш отдел продаж не смог закрыть на сделку, несмотря на все усилия</p>
+            </article>
+          </div>
+          <div class="row__column">
+            <article class="teaser">
+              <div class="teaser__image teaser__image_lg">
+               <img src="img/imagess.png" id="iconThree">
+              </div>
+              <h3 class="teaser__heading heading heading_3">Интернет-продвижение</h3>
+              <p>Вы не вникаете во все тонкости продвижения в интернете - это довольно нудное и кропотливое занятие</p>
+            </article>
+          </div>
+        </div>
+
+      </div><!-- /.container -->
+    </section><!-- /.section -->
+
+
+
+
+
+      </div><!-- /.container -->
+    </section><!-- /.cta -->
+
+
+    <!--========== SECTION ==========-->
+    <section class="section">
+      <div class="illustration illustration illustration_handshake" id="photoTwo">
+        <div class="illustration__container container">
+
+          <div class="illustration__content">
+            <h2 class="heading heading_2">Кому подходит система % от продаж + рекламный бюджет</h2>
+            <p class="subheading lead"><em>Важный пункт. Прочтите внимательно</em></p>
+
+            <ul class="icon-list">
+              <li class="icon-list__item">
+                <div class="icon-list__image">
+                 <iframe src="https://www.youtube.com/embed/t6Ej3js-zwM" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                </div>
+                <div class="icon-list__text">
+                  <h4 class="icon-list__heading heading heading_4">Вы заинтересованы в развитии своего бизнеса</h4>
+                  <p>и имеете четкие перспективы развития. Если это не так, мы не сможем вам помочь.</p>
+                </div>
+              </li>
+              <li class="icon-list__item">
+                <div class="icon-list__image">
+                 <iframe src="https://www.youtube.com/embed/t6Ej3js-zwM" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                </div>
+                <div class="icon-list__text">
+                  <h4 class="icon-list__heading heading heading_4">Ваш бизнес работает не первый год</h4>
+                  <p>Вы готовы к росту, а ваши менеджеры умеют обрабатывать входящие заявки и закрывать клиентов на продажи.</p>
+                </div>
+              </li>
+              <li class="icon-list__item">
+                <div class="icon-list__image">
+                 <iframe src="https://www.youtube.com/embed/t6Ej3js-zwM" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                </div>
+                <div class="icon-list__text">
+                  <h4 class="icon-list__heading heading heading_4">Средняя сумма с одной сделки &gt;8000 рублей</h4>
+                  <p>Если эта цифра меньше, то вряд ли как вам, так и нам будет выгодно такое сотрудничество.</p>
+                </div>
+              </li>
+              <li class="icon-list__item">
+                <div class="icon-list__image">
+                  <iframe src="https://www.youtube.com/embed/t6Ej3js-zwM" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                </div>
+                <div class="icon-list__text">
+                  <h4 class="icon-list__heading heading heading_4">Вы готовы к честному партнерству</h4>
+                  <p>и длительному сотрудничеству, в основе которых лежит взаимоуважение и открытость.</p>
+                </div>
+              </li>
+            </ul>
+
+          </div>
+
+        </div><!-- /.container -->
+      </div><!-- /.illustration -->
+    </section><!-- /.section -->
+
+
+  <div class="profit__footer">
+        <div class="container">
+          <div class="profit__request request">
+            <span class="request__button-wrap">
+              <button class="button" data-src="#order-form" data-fancybox="">Заказать расчет</button>
+            </span>
+            <small class="request__privacy">Нажимая кнопку, Вы даете согласие на<br> обработку своих персональных данных.<br> Это бесплатно и ни к чему Вас не обязывает</small>
+          </div>
+        </div>
+      </div><!-- /.profit__footer -->
+    </section><!-- /.profit -->
+
+
+    <!--========== STEPS ==========-->
+    <section class="steps section">
+      <div class="container">
+
+        <h2 class="heading heading_2 text-center">С чего начинается сотрудничество</h2>
+
+        <div class="steps__timeline">
+          <div class="steps__list">
+            <article class="steps__item">
+              <div class="steps__image">
+                <i class="fa fa-address-book-o" aria-hidden="true" id="iconOne"></i>
+              </div>
+              <div class="steps__text">
+                <h3 class="heading heading_3">Заявка</h3>
+                <p>Вы оставляете заявку на этом сайте с обязательным указанием телефона</p>
+                <p><a href="#" class="link">Оставить заявку</a></p>
+              </div>
+            </article>
+
+            <article class="steps__item">
+              <div class="steps__image">
+                <i class="fa fa-phone-square" aria-hidden="true" id="iconOne"></i>
+              </div>
+              <div class="steps__text">
+                <h3 class="heading heading_3">Звонок</h3>
+                <p>Мы связываемся с вами для уточнения и прояснения вопросов</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="steps__list">
+            <article class="steps__item">
+              <div class="steps__image">
+                <i class="fa fa-list-alt" aria-hidden="true" id="iconOne"></i>
+              </div>
+              <div class="steps__text">
+                <h3 class="heading heading_3">Анкетирование</h3>
+                <p>Заполняем блиц-анкету любым удобным для вас способом</p>
+              </div>
+            </article>
+
+            <article class="steps__item">
+              <div class="steps__image">
+                <i class="fa fa-file-text" aria-hidden="true" id="iconOne"></i>
+              </div>
+              <div class="steps__text">
+                <h3 class="heading heading_3">Договор</h3>
+                <p>Подписываем договор - вы вносите рекламный бюджет на депозит - от 100&nbsp;000&nbsp;р.</p>
+                <p>
+                  <strong class="steps__small text-uppercase">Вся сумма будет направлена на вашу рекламу</strong>
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <div class="steps__list">
+            <article class="steps__item">
+              <div class="steps__image">
+                <i class="fa fa-video-camera" aria-hidden="true" id="iconOne"></i>
+              </div>
+              <div class="steps__text">
+                <h3 class="heading heading_3">Интервью</h3>
+                <p>Проводим с вами повторное подробное интервью</p>
+              </div>
+            </article>
+            <article class="steps__item">
+              <div class="steps__image">
+               <i class="fa fa-users" aria-hidden="true" id="iconOne"></i>
+              </div>
+              <div class="steps__text">
+                <h3 class="heading heading_3">Клиенты</h3>
+                <p>Максимум через 3 недели вы начинаете получать первых лидов в свой отдел продаж</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <p class="steps__foot text-center lead"><em>Практика показывает, что
+  уже в первые недели после старта рекламной кампании ваши вложения
+  окупаются и начинают генерировать чистую прибыль.</em></p>
+
+      </div><!-- /.container -->
+    </section><!-- /.steps -->
+
+
+    <!--========== SECTION ==========-->
+    <section class="section section_bg-primary">
+      <div class="container">
+
+        <h2 class="heading heading_2 text-center">Как производятся расчеты</h2>
+
+        <div class="row row_three-columns">
+          <div class="row__column">
+            <article class="card">
+              <div class="card__image card__image_lg">
+                <img src="img/827499_announcement_512x512.png" alt="" id="iconTwo">
+              </div>
+              <h3 class="card__heading">Рекламный бюджет</h3>
+              <p>Вы самостоятельно вносите необходимые суммы на рекламные
+  площадки, которые будут использоваться. Все площадки предоставляют
+  документы для бухгалтерской отчетности.</p>
+            </article>
+          </div>
+          <div class="row__column">
+            <article class="card">
+              <div class="card__image card__image_lg">
+                <img src="img/DocumentsFolder.png" alt="" id="iconTwo">
+              </div>
+              <h3 class="card__heading">Отчетность</h3>
+              <p>Вы предоставляете отчет по полученным лидам и клиентам в
+  оговоренной форме еженедельно и за месяц или предоставляете доступ к
+  своей CRM-системе.</p>
+            </article>
+          </div>
+          <div class="row__column">
+            <article class="card">
+              <div class="card__image card__image_lg">
+                <img src="img/306445.png" alt="" id="iconTwo">
+              </div>
+              <h3 class="card__heading">Вознаграждение за услуги</h3>
+              <p>На основании полученных отчетов вы производите нам выплату
+  вознаграждения в первый месяц сотрудничества 2 раза, в последующие - 1
+  раз в месяц.</p>
+            </article>
+          </div>
+        </div>
+
+      </div><!-- /.container -->
+    </section><!-- /.section -->
+
+
+      <!--========== CTA ==========-->
+    <section class="cta section"  style="background-image: url('img/photoSix.jpg');">
+      <div class="container">
+
+        <h2 class="cta__heading heading">Вы сами видите - все довольно просто и прозрачно.</h2>
+
+        <div class="request">
+          <span class="request__button-wrap">
+            <button class="button" data-src="#order-form" data-fancybox="">Заказать расчет</button>
+          </span>
+          <small class="request__privacy">Нажимая кнопку, Вы даете согласие на<br> обработку своих персональных данных.<br> Это бесплатно и ни к чему Вас не обязывает</small>
+        </div>
+
+      </div><!-- /.container -->
+    </section><!-- /.cta -->
+
+
+    <!--========== FAQ ==========-->
+    <section class="faq section">
+      <div class="container">
+
+        <h2 class="heading heading_2 text-center">Вопросы, которые нам часто задают клиенты</h2>
+
+        <div class="row row_two-columns">
+          <div class="row__column">
+            <ul class="faq__list">
+              <li class="faq__list-item">
+                <h3 class="faq__list-heading">Почему вы берете предоплату в виде депозита на рекламу?</h3>
+                <p>Ваши деньги на депозите говорят о серьезности ваших намерений и
+   являются гарантией вашей платежеспособности. До внесения предоплаты
+  работы по вашему проекту не начинаются.</p>
+              </li>
+              <li class="faq__list-item">
+                <h3 class="faq__list-heading">Какие гарантии вы даете?</h3>
+                <p>Мы гарантируем, что приложим все усилия, чтобы ваш проект
+  вышел на стабильный доход - мы в этом заинтересованы так же, как и вы.
+  Если помните - мы начинаем получать от вас оплату только после
+  совершения вами продаж.</p>
+                <p>Если же вы хотите получить в договоре какие-то конкретные
+  цифры, то мы их не предоставляем - раз нет доверия на предварительном
+  этапе, нет смысла даже начинать сотрудничество.</p>
+              </li>
+              <li class="faq__list-item">
+                <h3 class="faq__list-heading">Можно ли выкупить рекламные кампании, домены и сайты?</h3>
+                <p>Можно, но с практической точки зрения это нецелесообразно -
+  чтобы цепочка работала с необходимой отдачей, над ней постоянно нужно
+  работать. Наши заказчики это понимают и не спешат расторгать договор.</p>
+              </li>
+            </ul>
+          </div>
+          <div class="row__column">
+            <ul class="faq__list">
+              <li class="faq__list-item">
+                <h3 class="faq__list-heading">Есть ли у вас доказательные кейсы? Можете показать?</h3>
+                <p>Кейсы есть, но мы не выносим их в общий доступ, чтобы не
+  копировали конкуренты и заказчики понапрасну не тратили свое время.
+  Потому что система, построенная для одного проекта, практически никогда
+  не работает для другого</p>
+              </li>
+              <li class="faq__list-item">
+                <h3 class="faq__list-heading">Почему заказчики вас не обманывают?</h3>
+                <p>Один раз в месяц мы под видом службы качества обзваниваем лиды
+   и, если выявляется факт обмана со стороны клиента, расторгаем договор,
+  останавливаем все рекламные кампании и больше с таким заказчиком не
+  работаем.</p>
+              </li>
+              <li class="faq__list-item">
+                <h3 class="faq__list-heading">Переходят ли рекламные кампании, домены и сайты в собственость клиента?</h3>
+                <p>Нет. Мы работаем с клиентами за % с продаж, а не предоставляем
+   услуги создания сайта, трафика и т.п. В разработку маркетинговых
+  материалов мы вкладываем собственные средства, поэтому они являются
+  собственностью нашего агентства.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div><!-- /.container -->
+    </section><!-- /.faq -->
+
+
+
+              <!--article class="contacts__item">
+                <h3 class="contacts__item-heading">следуйте за нами:</h3>
+                <ul class="social">
+                  <li class="social__item">
+                    <a class="social__link" href="#" title="ВКонтакте">
+                      <svg class="social__icon icon icon_vkontakte">
+                        <use xlink:href="./assets/img/icons.svg#vkontakte"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link" href="#" title="Facebook">
+                      <svg class="social__icon icon icon_facebook">
+                        <use xlink:href="./assets/img/icons.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link" href="#" title="Twitter">
+                      <svg class="social__icon icon icon_twitter">
+                        <use xlink:href="./assets/img/icons.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link" href="#" title="Instagram">
+                      <svg class="social__icon icon icon_instagram">
+                        <use xlink:href="./assets/img/icons.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link" href="#" title="Youtube">
+                      <svg class="social__icon icon icon_youtube">
+                        <use xlink:href="./assets/img/icons.svg#youtube"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link" href="#" title="Google+">
+                      <svg class="social__icon icon icon_google-plus">
+                        <use xlink:href="./assets/img/icons.svg#google-plus"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link" href="#" title="WhatsApp">
+                      <svg class="social__icon icon icon_whatsapp">
+                        <use xlink:href="./assets/img/icons.svg#whatsapp"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link" href="#" title="Telegram">
+                      <svg class="social__icon icon icon_telegram">
+                        <use xlink:href="./assets/img/icons.svg#telegram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </article>
+            </div>
+          </div--><!-- /.contacts__content -->
+        </div><!-- /.container -->
+
+
+    </div></div></section><!-- /.contacts -->
+
+
+    <!--========== FOOTER ==========-->
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__logo logo">
+          <svg class="logo__image logo__image_light icon icon_logo">
+            <use xlink:href="./assets/img/icons.svg#logo"></use>
+          </svg>
+          <span class="logo__desc" id="textFooter">Увеличение прибыли<br> вашего бизнеса с помощью<br> лояльного интернет-маркетинга</span>
+        </div>
+        <div class="footer__privacy">
+          <p>Политика обработки данных</p>
+          <p>Пользовательское соглашение</p>
+        </div>
+      </div><!-- /.container -->
+    </footer><!-- /.footer -->
+
+    <!--========== HIDDEN ==========-->
+    <div hidden="">
+      <div class="popup" id="order-form">
+        <form action="#" class="form" novalidate="novalidate">
+          <p class="form__row">
+            <input class="form__input" id="f01-name" name="name" required="" aria-required="true" type="text">
+            <label for="f01-name" class="form__label">Ваше имя:</label>
+          </p>
+          <p class="form__row">
+            <input class="form__input" id="f01-email" name="email" required="" aria-required="true" type="email">
+            <label for="f01-email" class="form__label">E-mail:</label>
+          </p>
+          <p class="form__row">
+            <input class="form__input" id="f01-phone" name="phone" required="" aria-required="true" placeholder="+7(___)___-__-__" maxlength="16" type="text">
+            <label for="f01-phone" class="form__label">Номер телефона:</label>
+          </p>
+          <p class="form__row">
+            <button class="button form__submit">Заказать расчет</button>
+          </p>
+        </form>
+      </div>
+
+      <div class="popup" id="callback-form">
+        <form action="#" class="form" novalidate="novalidate">
+          <p class="form__row">
+            <input class="form__input" id="f01-phone" name="phone" required="" aria-required="true" placeholder="+7(___)___-__-__" maxlength="16" type="text">
+            <label for="f01-phone" class="form__label">Номер телефона:</label>
+          </p>
+          <p class="form__row">
+            <button class="button form__submit">Отправить</button>
+          </p>
+        </form>
+      </div>
+
+      <div class="popup popup_large" id="privacy">
+        <article>
+    <h2 class="heading heading_2 text-center">Согласие на обработку персональных данных</h2>
+
+    <p>Настоящим в соответствии с Федеральным законом № 152-ФЗ «О
+  персональных данных» от 27.07.2006 года свободно, своей волей и в своем
+  интересе выражаю свое безусловное согласие на обработку моих
+  персональных данных ООО "ВИА" (ОГРН 1137847448045, ИНН 7810400680),
+  зарегистрированным в соответствии с законодательством РФ по адресу: ул.
+  Большая Монетная, дом 16, кор. 30, лит.A, №14-Н 26, 197101
+  САНКТ-ПЕТЕРБУРГ, Россия (далее по тексту - Оператор).</p>
+    <p>Персональные данные - любая информация, относящаяся к определенному
+  или определяемому на основании такой информации физическому лицу.</p>
+    <p>Настоящее Согласие выдано мною на обработку следующих персональных данных:</p>
+
+    <ul>
+      <li>Имя;</li>
+      <li>Фамилия;</li>
+      <li>Телефон;</li>
+      <li>E-mail;</li>
+      <li>Комментарий.</li>
+    </ul>
+
+    <p>Согласие дано Оператору для совершения следующих действий с моими
+  персональными данными с использованием средств автоматизации и/или без
+  использования таких средств: сбор, систематизация, накопление, хранение,
+   уточнение (обновление, изменение), использование, обезличивание, а
+  также осуществление любых иных действий, предусмотренных действующим
+  законодательством РФ как неавтоматизированными, так и
+  автоматизированными способами.</p>
+    <p>Данное согласие дается Оператору для обработки моих персональных данных в следующих целях:</p>
+
+    <ul>
+      <li>предоставление мне услуг/работ;</li>
+      <li>направление в мой адрес уведомлений, касающихся предоставляемых услуг/работ;</li>
+      <li>подготовка и направление ответов на мои запросы;</li>
+      <li>направление в мой адрес информации, в том числе рекламной, о мероприятиях/товарах/услугах/работах Оператора.</li>
+    </ul>
+
+    <p>Настоящее согласие действует до момента его отзыва путем направления соответствующего уведомления на электронный адрес
+      <a href="mailto:vladimir@ispi.ru" class="link">vladimir@ispi.ru</a>. В
+   случае отзыва мною согласия на обработку персональных данных Оператор
+  вправе продолжить обработку персональных данных без моего согласия при
+  наличии оснований, указанных в пунктах 2 – 11 части 1 статьи 6, части 2
+  статьи 10 и части 2 статьи 11 Федерального закона №152-ФЗ «О
+  персональных данных» от 27.06.2006 г.</p>
+  </article>		</div>
+
+
+      <div class="popup popup_large" id="terms">
+        <article>
+    <h2 class="heading heading_2 text-center">Пользовательское соглашение</h2>
+    <p>Настоящее Соглашение определяет условия использования Пользователями материалов и сервисов сайта ispi.ru (далее — «Сайт»).</p>
+    <ol>
+      <li><strong>1.Общие условия</strong>
+        <ol>
+          <li>1.1. Использование материалов и сервисов Сайта регулируется нормами действующего законодательства Российской Федерации.</li>
+          <li>1.2. Настоящее Соглашение является публичной офертой. Получая
+  доступ к материалам Сайта Пользователь считается присоединившимся к
+  настоящему Соглашению.</li>
+          <li>1.3. Администрация Сайта вправе в любое время в одностороннем
+  порядке изменять условия настоящего Соглашения. Такие изменения вступают
+   в силу по истечении 3 (Трех) дней с момента размещения новой версии
+  Соглашения на сайте. При несогласии Пользователя с внесенными
+  изменениями он обязан отказаться от доступа к Сайту, прекратить
+  использование материалов и сервисов Сайта.</li>
+        </ol>
+      </li>
+      <li>
+        <strong>2. Обязательства Пользователя</strong>
+        <ol>
+          <li>2.1. Пользователь соглашается не предпринимать действий, которые
+   могут рассматриваться как нарушающие российское законодательство или
+  нормы международного права, в том числе в сфере интеллектуальной
+  собственности, авторских и/или смежных правах, а также любых действий,
+  которые приводят или могут привести к нарушению нормальной работы Сайта и
+   сервисов Сайта.</li>
+          <li>2.2. Использование материалов Сайта без согласия
+  правообладателей не допускается (статья 1270 Г.К РФ). Для правомерного
+  использования материалов Сайта необходимо заключение лицензионных
+  договоров (получение лицензий) от Правообладателей.</li>
+          <li>2.3. При цитировании материалов Сайта, включая охраняемые
+  авторские произведения, ссылка на Сайт обязательна (подпункт 1 пункта 1
+  статьи 1274 Г.К РФ).</li>
+          <li>2.4. Комментарии и иные записи Пользователя на Сайте не должны
+  вступать в противоречие с требованиями законодательства Российской
+  Федерации и общепринятых норм морали и нравственности.</li>
+          <li>2.5. Пользователь предупрежден о том, что Администрация Сайта не
+   несет ответственности за посещение и использование им внешних ресурсов,
+   ссылки на которые могут содержаться на сайте.</li>
+          <li>2.6. Пользователь согласен с тем, что Администрация Сайта не
+  несет ответственности и не имеет прямых или косвенных обязательств перед
+   Пользователем в связи с любыми возможными или возникшими потерями или
+  убытками, связанными с любым содержанием Сайта, регистрацией авторских
+  прав и сведениями о такой регистрации, товарами или услугами, доступными
+   на или полученными через внешние сайты или ресурсы либо иные контакты
+  Пользователя, в которые он вступил, используя размещенную на Сайте
+  информацию или ссылки на внешние ресурсы.</li>
+          <li>2.7. Пользователь принимает положение о том, что все материалы и
+   сервисы Сайта или любая их часть могут сопровождаться рекламой.
+  Пользователь согласен с тем, что Администрация Сайта не несет какой-либо
+   ответственности и не имеет каких-либо обязательств в связи с такой
+  рекламой.</li>
+        </ol>
+      </li>
+      <li>
+        <strong>3. Прочие условия</strong>
+        <ol>
+          <li>3.1. Все возможные споры, вытекающие из настоящего Соглашения
+  или связанные с ним, подлежат разрешению в соответствии с действующим
+  законодательством Российской Федерации.</li>
+          <li>3.2. Ничто в Соглашении не может пониматься как установление
+  между Пользователем и Администрации Сайта агентских отношений, отношений
+   товарищества, отношений по совместной деятельности, отношений личного
+  найма, либо каких-то иных отношений, прямо не предусмотренных
+  Соглашением.</li>
+          <li>3.3. Признание судом какого-либо положения Соглашения
+  недействительным или не подлежащим принудительному исполнению не влечет
+  недействительности иных положений Соглашения.</li>
+          <li>3.4. Бездействие со стороны Администрации Сайта в случае
+  нарушения кем-либо из Пользователей положений Соглашения не лишает
+  Администрацию Сайта права предпринять позднее соответствующие действия в
+   защиту своих интересов и защиту авторских прав на охраняемые в
+  соответствии с законодательством материалы Сайта.</li>
+        </ol>
+      </li>
+    </ol>
+    <p><strong>Пользователь подтверждает, что ознакомлен со всеми пунктами настоящего Соглашения и безусловно принимает их.</strong></p>
+
+  </article>		</div>
+
+    </div>
+
+  </div>
+    <script src="js/app.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>new WOW().init();</script>
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="js/jquery.js"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="js/materialize.min.js"></script>
+<!-- custom js -->
+<script src="js/main.js" type="text/javascript"> </script>
+  </body>
+</html>
